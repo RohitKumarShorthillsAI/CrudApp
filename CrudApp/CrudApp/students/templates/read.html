@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+</head>
+<body>
+    <table border="1">
+        <th>
+            <td>Student Name</td>
+            <td>Email</td>
+            <td>Roll Numder</td>
+            <td>Section</td>
+        </th>
+        
+        {% for i in data %}
+        <tr><td></td>
+            <td>{{i.name}}</td>
+            <td>{{i.email}}</td>
+            <td>{{i.roll_number}}</td>
+            <td>{{i.section}}</td>
+        </tr>
+        {% endfor %}
+            
+        
+    </table>
+</body>
+</html>
